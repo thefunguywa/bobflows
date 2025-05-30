@@ -75,19 +75,6 @@
     "active": 1
   },
   {
-    "note": "test3",
-    "actions": [],
-    "conditions": [
-      {
-        "key": "",
-        "compare": "",
-        "operator": "=="
-      }
-    ],
-    "flow_id": 18,
-    "active": 1
-  },
-  {
     "0": {
       "note": "test1",
       "actions": [
