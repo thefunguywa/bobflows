@@ -1,225 +1,187 @@
 [
-    {
-        "note": "test1",
-        "actions": [
-            {
+  {
+    "note": "test1",
+    "actions": [
+      {
+        "type": "export",
+        "value": "",
+        "exportFields": {
+          "Bload": "1",
+          "ItemCode": "12.14",
+          "Quantity": "5",
+          "CostCentre": "12",
+          "PriceLevel": "1",
+          "Xdescription": "test2"
+        }
+      }
+    ],
+    "conditions": [
+      {
+        "key": "<Choices/Cabinetwork/Cabinetwork - Style & Size/Ensuite/item>",
+        "compare": "Lifestyle 900mm",
+        "operator": "contains"
+      },
+      {
+        "key": "TEST AND 1",
+        "logic": "AND",
+        "compare": "TEST AND 1",
+        "operator": "=="
+      },
+      {
+        "key": "SUB1",
+        "compare": "SUB1",
+        "operator": "==",
+        "sub-criteria": [
+          {
+            "actions": [
+              {
                 "type": "export",
                 "value": "",
                 "exportFields": {
-                    "Bload": "1",
-                    "ItemCode": "12.14",
-                    "Quantity": "5",
-                    "CostCentre": "12",
-                    "PriceLevel": "1",
-                    "Xdescription": "test2"
+                  "Bload": "1",
+                  "ItemCode": "15.15",
+                  "Quantity": "5",
+                  "CostCentre": "15",
+                  "PriceLevel": "1",
+                  "Xdescription": "SUB3 ACTION"
                 }
-            }
-        ],
-        "conditions": [
-            {
-                "key": "<Choices/Cabinetwork/Cabinetwork - Style & Size/Ensuite/item>",
-                "compare": "Lifestyle 900mm",
-                "operator": "contains"
-            },
-            {
-                "key": "TEST AND 1",
-                "logic": "AND",
-                "compare": "TEST AND 1",
-                "operator": "=="
-            },
-            {
-                "key": "SUB1",
-                "compare": "SUB1",
-                "operator": "==",
-                "sub-criteria": [
-                    {
-                        "actions": [
-                            {
-                                "type": "export",
-                                "value": "",
-                                "exportFields": {
-                                    "Bload": "1",
-                                    "ItemCode": "15.15",
-                                    "Quantity": "5",
-                                    "CostCentre": "15",
-                                    "PriceLevel": "1",
-                                    "Xdescription": "SUB3 ACTION"
-                                }
-                            }
-                        ],
-                        "conditions": [
-                            {
-                                "key": "SUB2",
-                                "compare": "SUB2",
-                                "operator": "=="
-                            }
-                        ],
-                        "subCriteria": [
-                            {
-                                "actions": [],
-                                "conditions": [
-                                    {
-                                        "key": "SUB3",
-                                        "compare": "SUB3",
-                                        "operator": "=="
-                                    }
-                                ],
-                                "subCriteria": []
-                            }
-                        ]
-                    }
-                ]
-            }
-        ],
-        "flow_id": 16,
-        "active": 1
-    },
-    {
-        "note": "test2",
-        "actions": [
-            {
-                "type": "export",
-                "value": "",
-                "exportFields": {
-                    "Bload": "1",
-                    "ItemCode": "13.13",
-                    "Quantity": "15",
-                    "CostCentre": "12",
-                    "PriceLevel": "1",
-                    "Xdescription": "test4"
-                }
-            }
-        ],
-        "conditions": [
-            {
-                "key": "Choices/Cabinetwork/Cabinetwork - Benchtops/Ensuite/item",
-                "compare": "20mm Cotton White",
-                "operator": "=="
-            },
-            {
-                "key": "sub1",
-                "logic": "AND",
-                "compare": "sub1",
-                "operator": "=="
-            },
-            {
-                "key": "sub2",
-                "logic": "AND",
-                "compare": "sub2",
-                "operator": "=="
-            }
-        ],
-        "flow_id": 17,
-        "active": 1
-    },
-    {
-        "note": "test3",
-        "actions": [],
-        "conditions": [
-            {
-                "key": "",
-                "compare": "",
-                "operator": "=="
-            }
-        ],
-        "flow_id": 18,
-        "active": 1
-    },
-    {
-        "0": {
-            "note": "test1",
-            "actions": [
-                {
-                    "type": "export",
-                    "value": "",
-                    "exportFields": {
-                        "Bload": "1",
-                        "ItemCode": "12.14",
-                        "Quantity": "5",
-                        "CostCentre": "12",
-                        "PriceLevel": "1",
-                        "Xdescription": "test2"
-                    }
-                }
+              }
             ],
             "conditions": [
-                {
-                    "key": "<Choices/Cabinetwork/Cabinetwork - Style & Size/Ensuite/item>",
-                    "logic": "IF",
-                    "title": "",
-                    "compare": "Lifestyle 900mm",
-                    "operator": "contains"
-                },
-                {
-                    "key": "TEST AND 1",
-                    "logic": "AND",
-                    "title": "",
-                    "compare": "TEST AND 1",
-                    "operator": "=="
-                },
-                {
-                    "key": "SUB1",
-                    "logic": "AND",
-                    "title": "",
-                    "compare": "SUB1",
-                    "operator": "=="
-                }
-            ]
-        },
-        "1": {
-            "note": "test2",
-            "actions": [
-                {
-                    "type": "export",
-                    "value": "",
-                    "exportFields": {
-                        "Bload": "1",
-                        "ItemCode": "13.13",
-                        "Quantity": "15",
-                        "CostCentre": "12",
-                        "PriceLevel": "1",
-                        "Xdescription": "test4"
-                    }
-                }
+              {
+                "key": "SUB2",
+                "compare": "SUB2",
+                "operator": "=="
+              }
             ],
-            "conditions": [
-                {
-                    "key": "Choices/Cabinetwork/Cabinetwork - Benchtops/Ensuite/item",
-                    "logic": "IF",
-                    "title": "",
-                    "compare": "20mm Cotton White",
+            "subCriteria": [
+              {
+                "actions": [],
+                "conditions": [
+                  {
+                    "key": "SUB3",
+                    "compare": "SUB3",
                     "operator": "=="
-                },
-                {
-                    "key": "sub1",
-                    "logic": "AND",
-                    "title": "",
-                    "compare": "sub1",
-                    "operator": "=="
-                },
-                {
-                    "key": "sub2",
-                    "logic": "AND",
-                    "title": "",
-                    "compare": "sub2",
-                    "operator": "=="
-                }
+                  }
+                ],
+                "subCriteria": []
+              }
             ]
+          }
+        ]
+      }
+    ],
+    "flow_id": 16,
+    "active": 1
+  },
+  {
+    "note": "test3",
+    "actions": [],
+    "conditions": [
+      {
+        "key": "",
+        "compare": "",
+        "operator": "=="
+      }
+    ],
+    "flow_id": 18,
+    "active": 1
+  },
+  {
+    "0": {
+      "note": "test1",
+      "actions": [
+        {
+          "type": "export",
+          "value": "",
+          "exportFields": {
+            "Bload": "1",
+            "ItemCode": "12.14",
+            "Quantity": "5",
+            "CostCentre": "12",
+            "PriceLevel": "1",
+            "Xdescription": "test2"
+          }
+        }
+      ],
+      "conditions": [
+        {
+          "key": "<Choices/Cabinetwork/Cabinetwork - Style & Size/Ensuite/item>",
+          "logic": "IF",
+          "title": "",
+          "compare": "Lifestyle 900mm",
+          "operator": "contains"
         },
-        "2": {
-            "note": "test3",
-            "actions": [],
-            "conditions": [
-                {
-                    "key": "",
-                    "logic": "IF",
-                    "title": "",
-                    "compare": "",
-                    "operator": "=="
-                }
-            ]
+        {
+          "key": "TEST AND 1",
+          "logic": "AND",
+          "title": "",
+          "compare": "TEST AND 1",
+          "operator": "=="
         },
-        "flow_id": 19,
-        "active": 1
-    }
+        {
+          "key": "SUB1",
+          "logic": "AND",
+          "title": "",
+          "compare": "SUB1",
+          "operator": "=="
+        }
+      ]
+    },
+    "1": {
+      "note": "test2",
+      "actions": [
+        {
+          "type": "export",
+          "value": "",
+          "exportFields": {
+            "Bload": "1",
+            "ItemCode": "13.13",
+            "Quantity": "15",
+            "CostCentre": "12",
+            "PriceLevel": "1",
+            "Xdescription": "test4"
+          }
+        }
+      ],
+      "conditions": [
+        {
+          "key": "Choices/Cabinetwork/Cabinetwork - Benchtops/Ensuite/item",
+          "logic": "IF",
+          "title": "",
+          "compare": "20mm Cotton White",
+          "operator": "=="
+        },
+        {
+          "key": "sub1",
+          "logic": "AND",
+          "title": "",
+          "compare": "sub1",
+          "operator": "=="
+        },
+        {
+          "key": "sub2",
+          "logic": "AND",
+          "title": "",
+          "compare": "sub2",
+          "operator": "=="
+        }
+      ]
+    },
+    "2": {
+      "note": "test3",
+      "actions": [],
+      "conditions": [
+        {
+          "key": "",
+          "logic": "IF",
+          "title": "",
+          "compare": "",
+          "operator": "=="
+        }
+      ]
+    },
+    "flow_id": 19,
+    "active": 1
+  }
 ]
